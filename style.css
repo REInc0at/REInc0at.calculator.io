@@ -1,0 +1,69 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+}
+
+.header{
+    padding: 40px; /*some padding */
+    text-align: center; /* center the text */
+    background: #0C5F79; /* Blue Lagoon Background*/
+    color: #F0F0F0; /* White Smoke text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+    font-size: 50px;
+}
+
+.container{ /* class name in html */
+
+    width: 100%;
+    height: 90vh;
+    background: #BCBDD3; /* Lavender Grey background */
+    display: flex;
+    align-items: center; /* center the items in the container (vertical) */
+    justify-content: center; /* center the items in the container (horizontal) */
+}
+
+.calculator{
+    background: #08151D; /* Black Pearl */
+    padding: 20px; /* some padding */
+    border-radius: 10px;
+}
+
+.calculator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px -5px 15px rgba(0, 0, 0, 0.2); /* top-left side, right-bottom */
+    background: transparent;
+    font-size: 20px;
+    color: #F0F0F0; /* White Smoke text color */
+    cursor: pointer;
+    margin: 10px; /* space between button */
+}
+
+.calculator form input:hover{
+    background: #1DBEE1; /* Summer Sky */
+    color: #08151D; /* Black Pearl */
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end; /* contents will be in the right */
+    margin: 20px 0; /* 20 pixel from top and bottom; left and right is 0 */
+}
+
+form .display input{ /* this for the input in text */
+    text-align: right;
+    flex: 1; /* full-width */
+    font-size: 45px;
+    box-shadow: none; /* there will be no box shadow */
+    pointer-events: none;
+}
+
+form input.operator{
+    color: #1DBEE1; /* Summer Sky */
+}
+
